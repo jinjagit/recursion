@@ -19,7 +19,7 @@ end
 
 def merge_sort(ary) # recursively divide and merge
   if ary.length > 1
-    ary_a, ary_b = ary[0...(ary.length/2)], ary[(ary.length/2)..-1]
+    ary_a, ary_b = ary[0...ary.length/2], ary[ary.length/2..-1]
     ary = merge(merge_sort(ary_a), merge_sort(ary_b))
   end
   ary
