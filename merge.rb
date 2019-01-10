@@ -17,10 +17,10 @@ def merge(ary_a, ary_b) # merge 2 sorted arrays
   merged
 end
 
-def divide_n_merge(ary) # recursively divide and merge
+def merge_sort(ary) # recursively divide and merge
   if ary.length > 1
     ary_a, ary_b = ary[0...(ary.length/2)], ary[(ary.length/2)..-1]
-    ary = merge(divide_n_merge(ary_a), divide_n_merge(ary_b))
+    ary = merge(merge_sort(ary_a), merge_sort(ary_b))
   end
   ary
 end
@@ -34,7 +34,7 @@ end
 puts "\nunsorted list of #{unsorted.length} integers:\n\n"
 p unsorted
 
-sorted = divide_n_merge unsorted
+sorted = merge_sort unsorted
 
 puts "\nsorted list of #{sorted.length} integers:\n\n"
 p sorted
