@@ -1,4 +1,4 @@
-# merge sort any number of unsorted integers, using recursion:
+# merge sort (array of) any number of unsorted integers, using recursion:
 
 def merge(ary_a, ary_b) # merge 2 sorted arrays
   merged = []
