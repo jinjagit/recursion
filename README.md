@@ -1,3 +1,3 @@
-###Ruby recursion practice:
+### Ruby recursion practice:
 
-##fibs.rb
+## fibs.rb
