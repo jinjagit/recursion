@@ -27,7 +27,7 @@ end
 
 
 unsorted = []
-9 + rand(99).times {unsorted << rand(100)}
+9 + rand(99).times { unsorted << rand(100) }
 
 puts "\nunsorted list of #{unsorted.length} integers:\n\n"
 p unsorted
